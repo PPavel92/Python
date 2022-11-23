@@ -12,9 +12,6 @@ result = left == right
 
 
 if result == True:
-    print(f"Утверждение истинно")
+    print("Утверждение истинна")
 else:
-    print(f"Утверждение ложно")
-print(result)
-print(left)
-print(right)
+    print("Утверждение ложь")
