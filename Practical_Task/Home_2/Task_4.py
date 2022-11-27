@@ -5,11 +5,16 @@
 # --> 0 2 3
 # -3 * -1 * 0 = 0
 # Вывод: 0
-a = []
-
-for _ in range(7):
-    k = int(input("Ведите число: "))
-    a.append(k)
-for i in range(1, 7):
-    print(a)
-
+list = []
+num = int(input("Введите число: "))
+for i in range(-num, num+1):
+    caunt = 0
+for i in range(7):
+    list.append(num-(num*2)+caunt)
+    caunt += 1
+print(list)    
+a = int(input("Введите индекс: "))
+b = int(input("Введите индекс: "))
+c = int(input("Введите индекс: ")) 
+sum = list[a] * list[b]* list[c]
+print("Вывод:", sum)

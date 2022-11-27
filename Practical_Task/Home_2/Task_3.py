@@ -4,9 +4,9 @@
 
 i = int(input("Введите число: "))
 caunt = 1
-j = 0
+f = 0
 while caunt <= i:
     sum = ((1+1/caunt)**caunt)
-    j += sum
+    f += sum
     caunt += 1
-print("%.2f" %  j)
+print("%.2f" %  f)
