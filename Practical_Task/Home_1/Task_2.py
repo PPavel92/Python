@@ -6,10 +6,9 @@ a = []
 for _ in range(3):
     a.append(input(f"Введите значение : "))
 
-left = not ([0] or [1] or [2])
-right = not [0] and not [1] and not [2]
+left = not ([] or [] or [])
+right = not [] and not [] and not []
 result = left == right
-
 
 if result == True:
     print("Утверждение истинна")
