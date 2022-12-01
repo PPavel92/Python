@@ -22,15 +22,20 @@
 # print(fun())
 
 
-def func_1():
-    list_a = ["123", "234", 123, "567"]
-    find_char = "123"
-    new_list = []
-    for i in range(len(list_a)):
-        if find_char == list_a[i]:
-            new_list.append(i)
-            if len(new_list) <= 1:
-                return -1
-    return new_list[1]
+test_list = ["qwe", "asd", "zxc", "qwe", "ertqwe"]
+print(f"список: {test_list}")
+test_item = input("Введите искомую строку: ")
 
-print(func_1())
+
+def check_list(test_list, test_item):
+    count = 0
+    for i in range(len(test_list)):
+        if test_list[i] == test_item:
+            count += 1
+            if count == 2:
+                return i
+    else:
+        return -1
+
+
+print(f"ответ: {check_list(test_list, test_item)}")

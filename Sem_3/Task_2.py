@@ -15,13 +15,4 @@ def in_a(a_, find_):
     return result
 
 print(in_a(a, "3"))          
-
-
-a = ['sdf13', 'fds66', '34']
-
-def find_idx(a_, find_):
-    for i in range(len(a_)):
-        if a_[i].find(find_) > -1:
-            return i   
-    
-print(find_idx(a, "s"))  
+ 
