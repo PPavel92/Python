@@ -5,7 +5,8 @@
 # - [2, 3, 4, 5, 6] => [12, 15, 16];
 # - [2, 3, 5, 6] => [12, 15]
 
-list =[2, 3,  5, 6]
+list =[2, 3, 4, 5, 6]
+
 def sum_index(list):
     list_new =[]
     for i in range(len(list)//2 + 1 
@@ -16,6 +17,5 @@ def sum_index(list):
         i += 1
         list_new.append(sum_id)
     return list_new
-
-     
+   
 print(f"Произведение пар чисел списка: " , sum_index(list))

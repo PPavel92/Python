@@ -11,6 +11,6 @@ def sum_index(list):
     for i in range(len(list)):
         if i % 2 != 0:
             sum += list[i]
-    print("Сумма нечетных индексов равна: "{list[i]}  {list[i]} , sum)
+    print("Сумма нечетных индексов равна: ", sum)
 
 sum_index(list)
