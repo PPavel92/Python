@@ -10,8 +10,8 @@ def fib_m(n):
     a, b = 0, 1
     result = [0]
     for i in range(n):
-        a, b = b, a + b
-        result.append(a*-1)
+        a, b = b, a - b
+        result.append(a)
     return result
 
 def fib_p(n):
