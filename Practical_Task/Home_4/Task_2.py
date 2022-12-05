@@ -4,7 +4,7 @@
 
 num = int(input("Введите число: "))
 i = 2 
-lst = [1]
+lst = []
 old = num
 while i <= num:
     if num % i == 0:

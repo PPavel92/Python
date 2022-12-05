@@ -3,8 +3,17 @@
 # Ввод: [1, 1, 2, 3, 4, 4, 4]
 # Вывод: [2, 3]
 
-lst = list(map(int, input("Введите числа через пробел:\n").split()))
-print(f"Исходный список: {lst}")
-new_lst = []
-[new_lst.append(i) for i in lst if i != i]
-print(f"Список из неповторяющихся элементов: {new_lst}")
+
+def dupl_element(list_one):
+    duplic = [i for i in list_one if list_one.count(i) == 1]
+    return duplic
+
+list_one = [1, 1, 2, 3, 4, 4, 4]
+print(f"Список из неповторяющихся элементов: {dupl_element(list_one)}")
+
+
+
+ 
+ 
+
+    
