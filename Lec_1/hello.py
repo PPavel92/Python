@@ -1,24 +1,24 @@
 # типы данных и переменная
 # int, float, boolean, str, list, None
-value = None
-a = 132
-b = 1.23
-print(type(a))
-print(type(b))
-value = 12334
-print(type(value))
-s = 'hello world'
+# value = None
+# a = 132
+# b = 1.23
+# print(type(a))
+# print(type(b))
+# value = 12334
+# print(type(value))
+# s = 'hello world'
 
-print(s)  # вывод строки
-print(a, '-', b, '-', s)
-print('{1} - {2} - {0}'.format(a, b, s))
-print(f'{a} - {b} - {s}')
+# print(s)  # вывод строки
+# print(a, '-', b, '-', s)
+# print('{1} - {2} - {0}'.format(a, b, s))
+# print(f'{a} - {b} - {s}')
 
-f = True
-print(f)
+# f = True
+# print(f)
 
-list = ['1', '2', '3', 'hello', 1, 2, 4.5, True]
-print(list)
+# list = ['1', '2', '3', 'hello', 1, 2, 4.5, True]
+# print(list)
 
 # Ввод и вывод данных
 # print() - отвечает за вывод данных
@@ -48,21 +48,19 @@ print(list)
 # Арифметические операции
 # +,-,*,/,%,//,**
 # (), Сокращенные операции
-a = 1.2
-b = 3
-c = a * b  # c = round(a * b, 5)
-print(c)
+# a = 1.2
+# b = 3
+# c = a * b  # c = round(a * b, 5)
+# print(c)
 
-a = 3
-a *= 5  # вместо a = a + 5
+# a = 3
+# a *= 5  # вместо a = a + 5
 
-print(a)
+# print(a)
 
 #  Логичесские операции
 #  >, >=, <, <=, ==, !=
-#  not, and, or - не путать с &, |, ^
-#  is, is not, in, not in
-#  gen
+#  768   
 
 # a = 1 > 4
 # print(a)
@@ -106,23 +104,31 @@ print(a)
 # Управляющий модуль
 # while, for
 
-original = 23
-inverted = 0
-while original != 0:
-    inverted = inverted * 10 + (original % 10)
-    original //= 10
-print(inverted)
+# original = 23
+# inverted = 0
+# while original != 0:
+#     inverted = inverted * 10 + (original % 10)
+#     original //= 10
+# print(inverted)
 
 
-# Управляющие конструкции:
-# for
+# # Управляющие конструкции:
+# # for
 
-list = range(10)            #[1,32,3,5]
-for i in list:              # for i in range(1, 5): "без объявления List"
-    print(i)
+# list = range(10)            #[1,32,3,5]
+# for i in list:              # for i in range(1, 5): "без объявления List"
+#     print(i)
 
      # начало, конец, шаг
 # range(start, stop, step)
 # range(5) -> [0, 1, 2, 3, 4]
 # range(2, 5) -> [2, 3, 4]
 # range(1, 7, 2) -> [1, 3, 5]
+
+
+a = [1,2,3,5,8,15,23,38]
+def gg(x):
+   return x**2
+
+g = [(i, gg(i)) for i in a if not i % 2]
+print(g)
