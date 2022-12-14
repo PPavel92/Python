@@ -92,7 +92,6 @@
 #         print_(player1, f, counter1, value)
 #     else:
 #         f = randint(1, 28) 
-#         f = f
 #         counter2 += f
 #         value -= f
 #         flag = True
@@ -139,6 +138,8 @@ while value > 28:
         flag = False
         print_(player1, f, counter1, value)
     else:
+        if counter2 == 0:
+            f =20
         if value == 57:
             f = 1
         if 49 <= value <= 56:
