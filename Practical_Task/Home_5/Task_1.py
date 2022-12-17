@@ -8,3 +8,6 @@ for i in last:
     if "абв" not in i:
         my_list.append(i)
 print(*my_list) 
+
+
+# my_list = [ i for i in last if "абв" not in i,  my_list.append(i)]

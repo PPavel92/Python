@@ -5,8 +5,8 @@
 
 # - [1.1, 1.2, 3.1, 10.01] => 0.19
 
-list = [1.1, 1.2, 3.1, 10.01]
-new_list = [(list[i]* 100) % 100 for i in range(len(list))]
+lst = [1.1, 1.2, 3.1, 10.01]
+new_list = [(lst[i]* 100) % 100 for i in range(len(lst))]
 
 def max_ind(new_list): 
     max_ = new_list[0]
@@ -28,6 +28,3 @@ def min_ind(new_list):
 resalt_min = min_ind(new_list)
 
 print(f"Разница между максимальным и минимальным значением дробной части => " , (resalt_max-resalt_min)/100)
-
- 
-
