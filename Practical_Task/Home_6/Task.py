@@ -44,13 +44,3 @@ lst = list(map(int, input("Введите числа через пробел:\n"
 l = len(lst)//2 + 1 if len(lst) % 2 != 0 else len(lst)//2
 new_lst = [lst[i]*lst[len(lst)-i-1] for i in range(l)]
 print(new_lst)
-
-# Задайте список из нескольких чисел. Напишите программу, которая найдёт сумму элементов списка, стоящих на нечётной идексах.
-
-# Пример:
-
-# [2, 3, 5, 9, 3] -> на нечётных идексах элементы 3 и 9, ответ: 12
-
-f_lst = '2, 3, 5, 9, 3, 1'
-# sum = [lst[i]  for i in range(len(f_lst)) if i % 2 != 0 else list[i] +list[i]]
-sum = list(filter(lambda i_lst: f_lst % 2 != 0 not in i_lst, f_lst))
