@@ -1,4 +1,3 @@
-
 def import_data(data, sep=None):
     
     with open('phone.csv', 'a+') as file:
@@ -9,6 +8,3 @@ def import_data(data, sep=None):
         else:
             file.write(sep.join(data))
             file.write(f"\n")
-
-
-       
