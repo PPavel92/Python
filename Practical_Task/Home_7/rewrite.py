@@ -7,3 +7,4 @@ def rewrite(data):
     f = '\n\n'.join(lst)
     with open('phone.csv', 'r+') as file:
         file.write(f)
+       
